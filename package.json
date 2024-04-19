@@ -4,7 +4,7 @@
   "description": "Monorepo for Something Fishy Application.",
   "main": "index.js",
   "repository": "https://github.com/christopher-spencer/something-fishy.git",
-  "author": "christopher spencer <cdspenzer@gmail.com>",
-  "license": "MIT",
+  "author": "christopher spencer",
+  "license": "UNLICENSED",
   "private": true
 }
