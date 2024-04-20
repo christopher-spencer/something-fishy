@@ -1,4 +1,7 @@
 {
+"name": "something-fishy-monorepo",
+"version": "0.0.0",
+"description": "Monorepo for Something Fishy",
   "repository": "https://github.com/christopher-spencer/something-fishy.git",
   "author": "christopher spencer",
   "license": "UNLICENSED",
