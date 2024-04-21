@@ -1,0 +1,69 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.3.3",
+  "deps": {
+    "@nx/js": "18.3.3",
+    "@nx/node": "18.3.3",
+    "@nx/workspace": "18.3.3",
+    "nx": "18.3.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".DS_Store",
+        "hash": "3067606200483020990"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "3833545590435012078"
+      },
+      {
+        "file": "README.md",
+        "hash": "14534800709022261397"
+      },
+      {
+        "file": "cache/18.3.3-nx.darwin-arm64.node",
+        "hash": "8471083489870746412"
+      },
+      {
+        "file": "cache/file-map.json",
+        "hash": "4447124506989661668"
+      },
+      {
+        "file": "cache/lockfile.hash",
+        "hash": "16439376989453797006"
+      },
+      {
+        "file": "cache/nx_files.nxt",
+        "hash": "1173592629866163658"
+      },
+      {
+        "file": "cache/parsed-lock-file.json",
+        "hash": "1527508227717888680"
+      },
+      {
+        "file": "cache/project-graph.json",
+        "hash": "15237202957098406437"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15826691490803362659"
+      },
+      {
+        "file": "package.json",
+        "hash": "6916650186559909400"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "6282762244684418310"
+      }
+    ]
+  }
+}

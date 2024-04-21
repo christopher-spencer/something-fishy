@@ -1,5 +1,0 @@
-# .nx files
-.nx/installation
-.nx/cache
-.nx/installation/node_modules
-node_modules
