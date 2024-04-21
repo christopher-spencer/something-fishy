@@ -1,9 +1,15 @@
 {
-"name": "something-fishy-monorepo",
-"version": "0.0.0",
-"description": "Monorepo for Something Fishy",
-"repository": "https://github.com/christopher-spencer/something-fishy.git",
-"author": "@christopher-spencer",
-"license": "UNLICENSED",
-"private": true
+  "name": "@org/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "18.3.3",
+    "@nx/node": "18.3.3",
+    "@nx/workspace": "18.3.3",
+    "nx": "18.3.2"
+  },
+  "nx": {}
 }

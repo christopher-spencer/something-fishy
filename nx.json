@@ -1,22 +1,5 @@
 {
-  "targetDefaults": {
-    "build": {
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ]
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    },
-    "e2e": {
-      "cache": true
-    }
-  },
-  "installation": {
-    "version": "18.3.2"
-  }
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "nxCloudAccessToken": "ZmE5ZTA4ZTEtNGQ1Yy00MDJjLWFiZjgtOGQ1NDFlNGZmODUzfHJlYWQtd3JpdGU="
 }
