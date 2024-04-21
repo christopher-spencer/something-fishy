@@ -1,10 +1,10 @@
 {
-  "name": "something-fishy",
-  "version": "1.0.0",
-  "description": "Monorepo for Something Fishy Application.",
-  "main": "index.js",
-  "repository": "https://github.com/christopher-spencer/something-fishy.git",
-  "author": "christopher spencer",
-  "license": "UNLICENSED",
-  "private": true
-}
+    "name": "something-fishy-monorepo",
+    "version": "0.0.0",
+    "description": "Monorepo for Something Fishy",
+    "repository": "https://github.com/christopher-spencer/something-fishy.git",
+    "author": "@christopher-spencer",
+    "license": "UNLICENSED",
+    "private": true
+    }
+    
