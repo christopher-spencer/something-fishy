@@ -1,0 +1,56 @@
+{
+  "name": "app-cli",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "app/cli/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/app/cli",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "app/cli/src/main.ts",
+        "tsConfig": "app/cli/tsconfig.app.json",
+        "assets": ["app/cli/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "app-cli:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "app-cli:build:development"
+        },
+        "production": {
+          "buildTarget": "app-cli:build:production"
+        }
+      }
+    }
+  }
+}
