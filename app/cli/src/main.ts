@@ -22,7 +22,28 @@ const person: [name: string, age: number, isHappy: boolean] = ['Mr. Mister', 31,
 
 const sandwich: { name: string, price: number, ingredients: string[], isPopular: boolean } = { name: 'Ham and Cheese', price: 5.99, ingredients: ['ham', 'cheese', 'bread'], isPopular: true };
 
-console.log(name, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients);
+const vehicle: { make: string, model: string, year: number, isElectric: boolean } = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 
+console.log(name, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
 
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+function eat(food: string): void {
+    console.log(`Eating ${food}`);
+}
+
+console.log(add(1, 2));
+console.log(eat('pizza'));
+
+const subtract = (a: number, b: number): number => a - b;
+
+const sayVehicleInfo = (vehicle: { make: string; model: string; year: number; isElectric: boolean; }): void => {
+        console.log(`The vehicle make is ${vehicle.make}, the model is ${vehicle.model}, the year is ${vehicle.year}, and it is ${vehicle.isElectric}}`);
+}
+
+console.log(subtract(5, 3));
+
+sayVehicleInfo(vehicle);
 
