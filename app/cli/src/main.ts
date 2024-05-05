@@ -47,3 +47,6 @@ console.log(subtract(5, 3));
 
 sayVehicleInfo(vehicle);
 
+const addThenSubtract = (a: number, b: number, c: number): number => subtract(add(a, b), c);
+
+addThenSubtract(10, 5, 3);
