@@ -2,7 +2,7 @@
 
 console.log('Hello World');
 
-const name = 'Mr. Mister';
+const personName: string = 'Mr. Mister';
 
 const poem: string = 'Roses are red, violets are blue';
 
@@ -24,7 +24,7 @@ const sandwich: { name: string, price: number, ingredients: string[], isPopular:
 
 const vehicle: { make: string, model: string, year: number, isElectric: boolean } = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 
-console.log(name, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
+console.log(personName, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
 
 function add(a: number, b: number): number {
   return a + b;
