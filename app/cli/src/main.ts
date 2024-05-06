@@ -51,7 +51,7 @@ const addThenSubtract = (a: number, b: number, c: number): number => subtract(ad
 
 addThenSubtract(10, 5, 3);
 
-function sayHello(name?: string) {
+function sayHello(name?: string): void {
     console.log(`Hello, ${name || 'Anonymous'}!`);
 }
 
