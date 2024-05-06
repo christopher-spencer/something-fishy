@@ -51,6 +51,13 @@ const addThenSubtract = (a: number, b: number, c: number): number => subtract(ad
 
 addThenSubtract(10, 5, 3);
 
+/**
+ * Logs a greeting to the console w/ optional name parameter
+ * 
+ * @param name - The name of the person to greet, or 'Anonymous' if name is not provided
+ * @returns void
+ */
+
 function sayHello(name?: string): void {
     console.log(`Hello, ${name || 'Anonymous'}!`);
 }

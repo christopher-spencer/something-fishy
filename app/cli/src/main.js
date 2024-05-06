@@ -28,6 +28,12 @@ console.log(subtract(5, 3));
 sayVehicleInfo(vehicle);
 var addThenSubtract = function (a, b, c) { return subtract(add(a, b), c); };
 addThenSubtract(10, 5, 3);
+/**
+ * Logs a greeting to the console w/ optional name parameter
+ *
+ * @param name - The name of the person to greet, or 'Anonymous' if name is not provided
+ * @returns void
+ */
 function sayHello(name) {
     console.log("Hello, ".concat(name || 'Anonymous', "!"));
 }
