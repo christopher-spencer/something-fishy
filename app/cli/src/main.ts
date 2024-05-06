@@ -50,3 +50,10 @@ sayVehicleInfo(vehicle);
 const addThenSubtract = (a: number, b: number, c: number): number => subtract(add(a, b), c);
 
 addThenSubtract(10, 5, 3);
+
+function sayHello(name?: string) {
+    console.log(`Hello, ${name || 'Anonymous'}!`);
+}
+
+sayHello('Mr. Mister');
+sayHello();

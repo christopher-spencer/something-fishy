@@ -28,3 +28,8 @@ console.log(subtract(5, 3));
 sayVehicleInfo(vehicle);
 var addThenSubtract = function (a, b, c) { return subtract(add(a, b), c); };
 addThenSubtract(10, 5, 3);
+function sayHello(name) {
+    console.log("Hello, ".concat(name || 'Anonymous', "!"));
+}
+sayHello('Mr. Mister');
+sayHello();
