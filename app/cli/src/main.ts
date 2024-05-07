@@ -40,7 +40,7 @@ console.log(eat('pizza'));
 const subtract = (a: number, b: number): number => a - b;
 
 const sayVehicleInfo = (vehicle: { make: string; model: string; year: number; isElectric: boolean; }): void => {
-  console.log(`The vehicle make is ${vehicle.make}, the model is ${vehicle.model}, the year is ${vehicle.year}, and it is ${vehicle.isElectric}}`);
+  console.log(`The vehicle make is ${vehicle.make}, the model is ${vehicle.model}, the year is ${vehicle.year}, and it is ${vehicle.isElectric} that the vehicle is electric.`);
 }
 
 console.log(subtract(5, 3));
