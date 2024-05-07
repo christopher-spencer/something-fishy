@@ -31,7 +31,7 @@ function add(a: number, b: number): number {
 }
 
 function eat(food: string): void {
-    console.log(`Eating ${food}`);
+  console.log(`Eating ${food}`);
 }
 
 console.log(add(1, 2));
@@ -40,7 +40,7 @@ console.log(eat('pizza'));
 const subtract = (a: number, b: number): number => a - b;
 
 const sayVehicleInfo = (vehicle: { make: string; model: string; year: number; isElectric: boolean; }): void => {
-        console.log(`The vehicle make is ${vehicle.make}, the model is ${vehicle.model}, the year is ${vehicle.year}, and it is ${vehicle.isElectric}}`);
+  console.log(`The vehicle make is ${vehicle.make}, the model is ${vehicle.model}, the year is ${vehicle.year}, and it is ${vehicle.isElectric}}`);
 }
 
 console.log(subtract(5, 3));
@@ -59,47 +59,47 @@ addThenSubtract(10, 5, 3);
  */
 
 function sayHello(name?: string): void {
-    console.log(`Hello, ${name || 'Anonymous'}!`);
+  console.log(`Hello, ${name || 'Anonymous'}!`);
 }
 
 sayHello('Mr. Mister');
 sayHello();
 
 enum Color {
-    Red = 'RED',
-    Green = 'GREEN',
-    Blue = 'BLUE',
-    Yellow = 'YELLOW',
-    Purple = 'PURPLE',
-    Orange = 'ORANGE',
-    Black = 'BLACK',
-    White = 'WHITE',
-    Pink = 'PINK',
-    Brown = 'BROWN',
-    Gray = 'GRAY'
+  Red = 'RED',
+  Green = 'GREEN',
+  Blue = 'BLUE',
+  Yellow = 'YELLOW',
+  Purple = 'PURPLE',
+  Orange = 'ORANGE',
+  Black = 'BLACK',
+  White = 'WHITE',
+  Pink = 'PINK',
+  Brown = 'BROWN',
+  Gray = 'GRAY'
 }
 
-enum Direction {  
-    North = 'NORTH',
-    South = 'SOUTH',
-    East = 'EAST',
-    West = 'WEST',
-    Northeast = 'NORTHEAST',
-    Northwest = 'NORTHWEST',
-    Southeast = 'SOUTHEAST',
-    Southwest = 'SOUTHWEST'
+enum Direction {
+  North = 'NORTH',
+  South = 'SOUTH',
+  East = 'EAST',
+  West = 'WEST',
+  Northeast = 'NORTHEAST',
+  Northwest = 'NORTHWEST',
+  Southeast = 'SOUTHEAST',
+  Southwest = 'SOUTHWEST'
 }
 
 console.log(Color.Green, Direction.North);
 
 const pickAColor = (color: Color): void => {
-    console.log(`You picked the color ${color}`);
+  console.log(`You picked the color ${color}`);
 }
 
 pickAColor(Color.Red);
 
 const pickADirection = (direction: Direction): void => {
-    console.log(`You picked the direction ${direction}`);
+  console.log(`You picked the direction ${direction}`);
 }
 
 pickADirection(Direction.North);
@@ -107,7 +107,26 @@ pickADirection(Direction.North);
 const address: [street: string, city: string, state: string, zip: number] = ['123 Main St', 'Anytown', 'NY', 12345];
 
 function sayAddress(...address): void {
-    console.log(`The address is ${address}`);
+  console.log(`The address is ${address}`);
 }
 
 sayAddress(address);
+
+function performCoolWalk(moveName: string, distance: number, moveNumber: number = 1, hasAGoatee: boolean): void {
+  console.log(`I do the ${moveName} move ${moveNumber} times and walk ${distance} feet.`)
+  
+  if (hasAGoatee) {
+    console.log('I\'m walking with a cool goatee.');
+  }
+}
+
+const walkMoves: [string, number, number, boolean][] = [
+  ['hop', 10, 3, true],
+  ['skip', 5, 2, false],
+  ['jump', 15, 4, true],
+  ['leap', 20, 5, false],
+  ['stroll', 25, 6, true],
+  ['mosey', 30, 7, false]
+];
+
+walkMoves.forEach(move => performCoolWalk(...move));

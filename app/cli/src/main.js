@@ -82,3 +82,19 @@ function sayAddress() {
     console.log("The address is ".concat(address));
 }
 sayAddress(address);
+function performCoolWalk(moveName, distance, moveNumber, hasAGoatee) {
+    if (moveNumber === void 0) { moveNumber = 1; }
+    console.log("I do the ".concat(moveName, " move ").concat(moveNumber, " times and walk ").concat(distance, " feet."));
+    if (hasAGoatee) {
+        console.log('I\'m walking with a cool goatee.');
+    }
+}
+var walkMoves = [
+    ['hop', 10, 3, true],
+    ['skip', 5, 2, false],
+    ['jump', 15, 4, true],
+    ['leap', 20, 5, false],
+    ['stroll', 25, 6, true],
+    ['mosey', 30, 7, false]
+];
+walkMoves.forEach(function (move) { return performCoolWalk.apply(void 0, move); });
