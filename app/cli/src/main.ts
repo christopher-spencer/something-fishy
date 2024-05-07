@@ -89,3 +89,17 @@ enum Direction {
     Southeast = 'SOUTHEAST',
     Southwest = 'SOUTHWEST'
 }
+
+console.log(Color.Green, Direction.North);
+
+const pickAColor = (color: Color): void => {
+    console.log(`You picked the color ${color}`);
+}
+
+pickAColor(Color.Red);
+
+const pickADirection = (direction: Direction): void => {
+    console.log(`You picked the direction ${direction}`);
+}
+
+pickADirection(Direction.North);
