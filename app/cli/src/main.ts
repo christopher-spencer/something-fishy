@@ -159,13 +159,16 @@ walkMoves.forEach(move => performCoolWalk(...move));
 
 // OBJECT TYPES
 
-let company1: {
+let Company: {
   companyName: string,
   boss: {name: string, age: number},
   employees: {name: string, age: number}[],
   employeeOfTheMonth: {name: string, age: number},
   moneyEarned: number
 };
+
+// Research this further...
+const company1: typeof Company = {} as typeof Company;
 
 company1.companyName = 'Acme Inc.';
 
@@ -185,17 +188,19 @@ company1.moneyEarned = 1000000;
 
 console.log(company1);
 
-type Person = { name: string, age: number};
-
 //TYPE ALIASES
 
-let company2: {
+type Person = { name: string, age: number};
+
+let CompanyTwo: {
   companyName: string,
   boss: Person,
   employees: Person[],
   employeeOfTheMonth: Person,
   moneyEarned: number
 };
+
+const company2: typeof CompanyTwo = {} as typeof CompanyTwo;
 
 company2.companyName = 'Hamburger Inc.';
 company2.boss = {name: 'Mr. Burger', age: 55};
@@ -212,4 +217,3 @@ company2.employeeOfTheMonth = {name: 'Fry Cook', age: 25};
 company2.moneyEarned = 500000;
 
 console.log(company2);
-

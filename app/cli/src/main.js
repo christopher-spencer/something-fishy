@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 console.log('Hello World');
+// TYPESCRIPT VARIABLES
 var personName = 'Mr. Mister';
 var poem = 'Roses are red, violets are blue';
 var numbers = [1, 2, 3];
@@ -8,10 +9,12 @@ var isHappy = true;
 isHappy = false;
 var age = 30;
 age = 31;
+// TYPESCRIPT ARRAYS AND OBJECTS
 var person = ['Mr. Mister', 31, false];
 var sandwich = { name: 'Ham and Cheese', price: 5.99, ingredients: ['ham', 'cheese', 'bread'], isPopular: true };
 var vehicle = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 console.log(personName, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
+// TYPESCRIPT FUNCTIONS
 function add(a, b) {
     return a + b;
 }
@@ -28,6 +31,7 @@ console.log(subtract(5, 3));
 sayVehicleInfo(vehicle);
 var addThenSubtract = function (a, b, c) { return subtract(add(a, b), c); };
 addThenSubtract(10, 5, 3);
+// DOCUMENTATION
 /**
  * Logs a greeting to the console w/ optional name parameter
  *
@@ -39,6 +43,7 @@ function sayHello(name) {
 }
 sayHello('Mr. Mister');
 sayHello();
+//ENUMS
 var Color;
 (function (Color) {
     Color["Red"] = "RED";
@@ -81,6 +86,7 @@ var pickADirection = function (direction) {
     console.log("You picked the direction ".concat(direction));
 };
 pickADirection(Direction.North);
+// SPREAD SYNTAX
 var address = ['123 Main St', 'Anytown', 'NY', 12345];
 function sayAddress() {
     var address = [];
@@ -90,6 +96,7 @@ function sayAddress() {
     console.log("The address is ".concat(address));
 }
 sayAddress(address);
+// RANDOM TYPESCRIPT FUNCTION
 function performCoolWalk(moveName, distance, moveNumber, hasAGoatee) {
     if (moveNumber === void 0) { moveNumber = 1; }
     console.log("I do the ".concat(moveName, " move ").concat(moveNumber, " times and walk ").concat(distance, " feet."));
@@ -106,3 +113,33 @@ var walkMoves = [
     ['mosey', 30, 7, false]
 ];
 walkMoves.forEach(function (move) { return performCoolWalk.apply(void 0, move); });
+// OBJECT TYPES
+var Company;
+// Research this further...
+var company1 = {};
+company1.companyName = 'Acme Inc.';
+company1.boss = { name: 'Mr. Big', age: 50 };
+company1.employees = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 35 },
+    { name: 'Daisy', age: 40 },
+    { name: 'Eve', age: 45 },
+];
+company1.employeeOfTheMonth = { name: 'Alice', age: 25 };
+company1.moneyEarned = 1000000;
+console.log(company1);
+var CompanyTwo;
+var company2 = {};
+company2.companyName = 'Hamburger Inc.';
+company2.boss = { name: 'Mr. Burger', age: 55 };
+company2.employees = [
+    { name: 'Fry Cook', age: 25 },
+    { name: 'Cashier', age: 30 },
+    { name: 'Manager', age: 35 },
+    { name: 'Janitor', age: 40 },
+    { name: 'Delivery Driver', age: 45 },
+];
+company2.employeeOfTheMonth = { name: 'Fry Cook', age: 25 };
+company2.moneyEarned = 500000;
+console.log(company2);
