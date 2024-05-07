@@ -2,6 +2,8 @@
 
 console.log('Hello World');
 
+// TYPESCRIPT VARIABLES
+
 const personName: string = 'Mr. Mister';
 
 const poem: string = 'Roses are red, violets are blue';
@@ -18,6 +20,8 @@ let age: number = 30;
 
 age = 31;
 
+// TYPESCRIPT ARRAYS AND OBJECTS
+
 const person: [name: string, age: number, isHappy: boolean] = ['Mr. Mister', 31, false];
 
 const sandwich: { name: string, price: number, ingredients: string[], isPopular: boolean } = { name: 'Ham and Cheese', price: 5.99, ingredients: ['ham', 'cheese', 'bread'], isPopular: true };
@@ -25,6 +29,8 @@ const sandwich: { name: string, price: number, ingredients: string[], isPopular:
 const vehicle: { make: string, model: string, year: number, isElectric: boolean } = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 
 console.log(personName, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
+
+// TYPESCRIPT FUNCTIONS
 
 function add(a: number, b: number): number {
   return a + b;
@@ -51,6 +57,8 @@ const addThenSubtract = (a: number, b: number, c: number): number => subtract(ad
 
 addThenSubtract(10, 5, 3);
 
+// DOCUMENTATION
+
 /**
  * Logs a greeting to the console w/ optional name parameter
  * 
@@ -64,6 +72,8 @@ function sayHello(name?: string): void {
 
 sayHello('Mr. Mister');
 sayHello();
+
+//ENUMS
 
 enum Color {
   Red = 'RED',
@@ -116,6 +126,8 @@ const pickADirection = (direction: Direction): void => {
 
 pickADirection(Direction.North);
 
+// SPREAD SYNTAX
+
 const address: [street: string, city: string, state: string, zip: number] = ['123 Main St', 'Anytown', 'NY', 12345];
 
 function sayAddress(...address): void {
@@ -123,6 +135,8 @@ function sayAddress(...address): void {
 }
 
 sayAddress(address);
+
+// RANDOM TYPESCRIPT FUNCTION
 
 function performCoolWalk(moveName: string, distance: number, moveNumber: number = 1, hasAGoatee: boolean): void {
   console.log(`I do the ${moveName} move ${moveNumber} times and walk ${distance} feet.`)
@@ -142,6 +156,8 @@ const walkMoves: [string, number, number, boolean][] = [
 ];
 
 walkMoves.forEach(move => performCoolWalk(...move));
+
+// OBJECT TYPES
 
 let company1: {
   companyName: string,
@@ -170,6 +186,8 @@ company1.moneyEarned = 1000000;
 console.log(company1);
 
 type Person = { name: string, age: number};
+
+//TYPE ALIASES
 
 let company2: {
   companyName: string,
