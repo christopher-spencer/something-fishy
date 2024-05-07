@@ -96,6 +96,14 @@ const whichWayToTheNorthPole: Direction = Direction.North;
 
 console.log(whichWayToTheNorthPole);
 
+const favoriteColors: [Color, Ranking: number][] = [
+  [Color.Purple, 1],
+  [Color.Black, 2],
+  [Color.Yellow, 3],
+];
+
+console.log(favoriteColors);
+
 const pickAColor = (color: Color): void => {
   console.log(`You picked the color ${color}`);
 }

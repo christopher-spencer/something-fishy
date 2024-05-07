@@ -22,7 +22,7 @@ console.log(add(1, 2));
 console.log(eat('pizza'));
 var subtract = function (a, b) { return a - b; };
 var sayVehicleInfo = function (vehicle) {
-    console.log("The vehicle make is ".concat(vehicle.make, ", the model is ").concat(vehicle.model, ", the year is ").concat(vehicle.year, ", and it is ").concat(vehicle.isElectric, "}"));
+    console.log("The vehicle make is ".concat(vehicle.make, ", the model is ").concat(vehicle.model, ", the year is ").concat(vehicle.year, ", and it is ").concat(vehicle.isElectric, " that the vehicle is electric."));
 };
 console.log(subtract(5, 3));
 sayVehicleInfo(vehicle);
@@ -65,6 +65,14 @@ var Direction;
     Direction["Southwest"] = "SOUTHWEST";
 })(Direction || (Direction = {}));
 console.log(Color.Green, Direction.North);
+var whichWayToTheNorthPole = Direction.North;
+console.log(whichWayToTheNorthPole);
+var favoriteColors = [
+    [Color.Purple, 1],
+    [Color.Black, 2],
+    [Color.Yellow, 3],
+];
+console.log(favoriteColors);
 var pickAColor = function (color) {
     console.log("You picked the color ".concat(color));
 };
