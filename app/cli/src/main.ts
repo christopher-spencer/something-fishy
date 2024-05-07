@@ -143,7 +143,7 @@ const walkMoves: [string, number, number, boolean][] = [
 
 walkMoves.forEach(move => performCoolWalk(...move));
 
-let company: {
+let company1: {
   companyName: string,
   boss: {name: string, age: number},
   employees: {name: string, age: number}[],
@@ -151,11 +151,11 @@ let company: {
   moneyEarned: number
 };
 
-company.companyName = 'Acme Inc.';
+company1.companyName = 'Acme Inc.';
 
-company.boss = {name: 'Mr. Big', age: 50};
+company1.boss = {name: 'Mr. Big', age: 50};
 
-company.employees = [
+company1.employees = [
   {name: 'Alice', age: 25},
   {name: 'Bob', age: 30},
   {name: 'Charlie', age: 35},
@@ -163,8 +163,35 @@ company.employees = [
   {name: 'Eve', age: 45},
 ];
 
-company.employeeOfTheMonth = {name: 'Alice', age: 25};
+company1.employeeOfTheMonth = {name: 'Alice', age: 25};
 
-company.moneyEarned = 1000000;
+company1.moneyEarned = 1000000;
 
-console.log(company);
+console.log(company1);
+
+type Person = { name: string, age: number};
+
+let company2: {
+  companyName: string,
+  boss: Person,
+  employees: Person[],
+  employeeOfTheMonth: Person,
+  moneyEarned: number
+};
+
+company2.companyName = 'Hamburger Inc.';
+company2.boss = {name: 'Mr. Burger', age: 55};
+company2.employees = [
+  {name: 'Fry Cook', age: 25},
+  {name: 'Cashier', age: 30},
+  {name: 'Manager', age: 35},
+  {name: 'Janitor', age: 40},
+  {name: 'Delivery Driver', age: 45},
+];
+
+company2.employeeOfTheMonth = {name: 'Fry Cook', age: 25};
+
+company2.moneyEarned = 500000;
+
+console.log(company2);
+
