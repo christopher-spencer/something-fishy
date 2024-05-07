@@ -92,6 +92,10 @@ enum Direction {
 
 console.log(Color.Green, Direction.North);
 
+const whichWayToTheNorthPole: Direction = Direction.North;
+
+console.log(whichWayToTheNorthPole);
+
 const pickAColor = (color: Color): void => {
   console.log(`You picked the color ${color}`);
 }
