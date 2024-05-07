@@ -64,3 +64,28 @@ function sayHello(name?: string): void {
 
 sayHello('Mr. Mister');
 sayHello();
+
+enum Color {
+    Red = 'RED',
+    Green = 'GREEN',
+    Blue = 'BLUE',
+    Yellow = 'YELLOW',
+    Purple = 'PURPLE',
+    Orange = 'ORANGE',
+    Black = 'BLACK',
+    White = 'WHITE',
+    Pink = 'PINK',
+    Brown = 'BROWN',
+    Gray = 'GRAY'
+}
+
+enum Direction {  
+    North = 'NORTH',
+    South = 'SOUTH',
+    East = 'EAST',
+    West = 'WEST',
+    Northeast = 'NORTHEAST',
+    Northwest = 'NORTHWEST',
+    Southeast = 'SOUTHEAST',
+    Southwest = 'SOUTHWEST'
+}
