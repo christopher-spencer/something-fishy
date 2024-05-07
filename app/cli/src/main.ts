@@ -103,3 +103,11 @@ const pickADirection = (direction: Direction): void => {
 }
 
 pickADirection(Direction.North);
+
+const address: [street: string, city: string, state: string, zip: number] = ['123 Main St', 'Anytown', 'NY', 12345];
+
+function sayAddress(...address): void {
+    console.log(`The address is ${address}`);
+}
+
+sayAddress(address);
