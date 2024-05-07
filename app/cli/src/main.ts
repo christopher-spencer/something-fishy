@@ -142,3 +142,29 @@ const walkMoves: [string, number, number, boolean][] = [
 ];
 
 walkMoves.forEach(move => performCoolWalk(...move));
+
+let company: {
+  companyName: string,
+  boss: {name: string, age: number},
+  employees: {name: string, age: number}[],
+  employeeOfTheMonth: {name: string, age: number},
+  moneyEarned: number
+};
+
+company.companyName = 'Acme Inc.';
+
+company.boss = {name: 'Mr. Big', age: 50};
+
+company.employees = [
+  {name: 'Alice', age: 25},
+  {name: 'Bob', age: 30},
+  {name: 'Charlie', age: 35},
+  {name: 'Daisy', age: 40},
+  {name: 'Eve', age: 45},
+];
+
+company.employeeOfTheMonth = {name: 'Alice', age: 25};
+
+company.moneyEarned = 1000000;
+
+console.log(company);
