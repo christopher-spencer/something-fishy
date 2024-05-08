@@ -1,4 +1,6 @@
+"use strict";
 /* eslint-disable @typescript-eslint/no-inferrable-types */
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log('Hello World');
 console.log('\n');
 // TYPESCRIPT VARIABLES
@@ -129,7 +131,6 @@ walkMoves.forEach(function (move) { return performCoolWalk.apply(void 0, move); 
 console.log('\n');
 // OBJECT TYPES
 var Company;
-// Research this further...
 var company1 = {};
 company1.companyName = 'Acme Inc.';
 company1.boss = { name: 'Mr. Big', age: 50 };
@@ -158,4 +159,19 @@ company2.employees = [
 company2.employeeOfTheMonth = { name: 'Fry Cook', age: 25 };
 company2.moneyEarned = 500000;
 console.log(company2);
+console.log('\n');
+// FUNCTION TYPES
+var echo = console.log;
+echo('Hello, World!');
+echo('\n');
+var greetColor = function (color) { return console.log("Hey, ".concat(color)); };
+var greetDirection = function (direction) { return console.log("Hey, ".concat(direction)); };
+function somethingSaysHeyThenSomethingElse(something, value) {
+    something(value);
+    console.log('\n');
+    console.log('Doing something else...');
+}
+somethingSaysHeyThenSomethingElse(greetColor, Color.Red);
+console.log('\n');
+somethingSaysHeyThenSomethingElse(greetDirection, Direction.North);
 console.log('\n');

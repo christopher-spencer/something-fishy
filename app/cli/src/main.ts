@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 
+import { dir } from "console";
+
 console.log('Hello World');
 console.log('\n');
 
@@ -181,7 +183,6 @@ let Company: {
   moneyEarned: number
 };
 
-// Research this further...
 const company1: typeof Company = {} as typeof Company;
 
 company1.companyName = 'Acme Inc.';
@@ -232,4 +233,29 @@ company2.employeeOfTheMonth = {name: 'Fry Cook', age: 25};
 company2.moneyEarned = 500000;
 
 console.log(company2);
+console.log('\n');
+
+// FUNCTION TYPES
+
+const echo = console.log;
+echo('Hello, World!');
+echo('\n');
+
+type GreetSomething = (something: Color | Direction) => void;
+
+const greetColor = (color: Color): void => console.log(`Hey, ${color}`);
+
+const greetDirection = (direction: Direction): void => console.log(`Hey, ${direction}`);
+
+function somethingSaysHeyThenSomethingElse(something: GreetSomething, value: Color | Direction) {
+  something(value);
+
+  console.log('\n');
+  console.log('Doing something else...');
+}
+
+somethingSaysHeyThenSomethingElse(greetColor, Color.Red);
+console.log('\n');
+
+somethingSaysHeyThenSomethingElse(greetDirection, Direction.North);
 console.log('\n');
