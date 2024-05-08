@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 
 console.log('Hello World');
+console.log('\n');
 
 // TYPESCRIPT VARIABLES
 
@@ -29,6 +30,7 @@ const sandwich: { name: string, price: number, ingredients: string[], isPopular:
 const vehicle: { make: string, model: string, year: number, isElectric: boolean } = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 
 console.log(personName, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
+console.log('\n');
 
 // TYPESCRIPT FUNCTIONS
 
@@ -41,7 +43,9 @@ function eat(food: string): void {
 }
 
 console.log(add(1, 2));
+console.log('\n');
 console.log(eat('pizza'));
+console.log('\n');
 
 const subtract = (a: number, b: number): number => a - b;
 
@@ -50,6 +54,7 @@ const sayVehicleInfo = (vehicle: { make: string; model: string; year: number; is
 }
 
 console.log(subtract(5, 3));
+console.log('\n');
 
 sayVehicleInfo(vehicle);
 
@@ -71,7 +76,9 @@ function sayHello(name?: string): void {
 }
 
 sayHello('Mr. Mister');
+console.log('\n');
 sayHello();
+console.log('\n');
 
 //ENUMS
 
@@ -101,10 +108,12 @@ enum Direction {
 }
 
 console.log(Color.Green, Direction.North);
+console.log('\n');
 
 const whichWayToTheNorthPole: Direction = Direction.North;
 
 console.log(whichWayToTheNorthPole);
+console.log('\n');
 
 const favoriteColors: [Color, Ranking: number][] = [
   [Color.Purple, 1],
@@ -113,18 +122,21 @@ const favoriteColors: [Color, Ranking: number][] = [
 ];
 
 console.log(favoriteColors);
+console.log('\n');
 
 const pickAColor = (color: Color): void => {
   console.log(`You picked the color ${color}`);
 }
 
 pickAColor(Color.Red);
+console.log('\n');
 
 const pickADirection = (direction: Direction): void => {
   console.log(`You picked the direction ${direction}`);
 }
 
 pickADirection(Direction.North);
+console.log('\n');
 
 // SPREAD SYNTAX
 
@@ -135,6 +147,7 @@ function sayAddress(...address): void {
 }
 
 sayAddress(address);
+console.log('\n');
 
 // RANDOM TYPESCRIPT FUNCTION
 
@@ -156,6 +169,7 @@ const walkMoves: [string, number, number, boolean][] = [
 ];
 
 walkMoves.forEach(move => performCoolWalk(...move));
+console.log('\n');
 
 // OBJECT TYPES
 
@@ -187,6 +201,7 @@ company1.employeeOfTheMonth = {name: 'Alice', age: 25};
 company1.moneyEarned = 1000000;
 
 console.log(company1);
+console.log('\n');
 
 //TYPE ALIASES
 
@@ -217,3 +232,4 @@ company2.employeeOfTheMonth = {name: 'Fry Cook', age: 25};
 company2.moneyEarned = 500000;
 
 console.log(company2);
+console.log('\n');

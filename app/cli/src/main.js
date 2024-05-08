@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 console.log('Hello World');
+console.log('\n');
 // TYPESCRIPT VARIABLES
 var personName = 'Mr. Mister';
 var poem = 'Roses are red, violets are blue';
@@ -14,6 +15,7 @@ var person = ['Mr. Mister', 31, false];
 var sandwich = { name: 'Ham and Cheese', price: 5.99, ingredients: ['ham', 'cheese', 'bread'], isPopular: true };
 var vehicle = { make: 'Ford', model: 'Ranger', year: 2011, isElectric: false };
 console.log(personName, poem, numbers, dogNames[0], isHappy, age, person, sandwich.ingredients, vehicle.make, vehicle.model, vehicle.year, vehicle.isElectric);
+console.log('\n');
 // TYPESCRIPT FUNCTIONS
 function add(a, b) {
     return a + b;
@@ -22,12 +24,15 @@ function eat(food) {
     console.log("Eating ".concat(food));
 }
 console.log(add(1, 2));
+console.log('\n');
 console.log(eat('pizza'));
+console.log('\n');
 var subtract = function (a, b) { return a - b; };
 var sayVehicleInfo = function (vehicle) {
     console.log("The vehicle make is ".concat(vehicle.make, ", the model is ").concat(vehicle.model, ", the year is ").concat(vehicle.year, ", and it is ").concat(vehicle.isElectric, " that the vehicle is electric."));
 };
 console.log(subtract(5, 3));
+console.log('\n');
 sayVehicleInfo(vehicle);
 var addThenSubtract = function (a, b, c) { return subtract(add(a, b), c); };
 addThenSubtract(10, 5, 3);
@@ -42,7 +47,9 @@ function sayHello(name) {
     console.log("Hello, ".concat(name || 'Anonymous', "!"));
 }
 sayHello('Mr. Mister');
+console.log('\n');
 sayHello();
+console.log('\n');
 //ENUMS
 var Color;
 (function (Color) {
@@ -70,22 +77,27 @@ var Direction;
     Direction["Southwest"] = "SOUTHWEST";
 })(Direction || (Direction = {}));
 console.log(Color.Green, Direction.North);
+console.log('\n');
 var whichWayToTheNorthPole = Direction.North;
 console.log(whichWayToTheNorthPole);
+console.log('\n');
 var favoriteColors = [
     [Color.Purple, 1],
     [Color.Black, 2],
     [Color.Yellow, 3],
 ];
 console.log(favoriteColors);
+console.log('\n');
 var pickAColor = function (color) {
     console.log("You picked the color ".concat(color));
 };
 pickAColor(Color.Red);
+console.log('\n');
 var pickADirection = function (direction) {
     console.log("You picked the direction ".concat(direction));
 };
 pickADirection(Direction.North);
+console.log('\n');
 // SPREAD SYNTAX
 var address = ['123 Main St', 'Anytown', 'NY', 12345];
 function sayAddress() {
@@ -96,6 +108,7 @@ function sayAddress() {
     console.log("The address is ".concat(address));
 }
 sayAddress(address);
+console.log('\n');
 // RANDOM TYPESCRIPT FUNCTION
 function performCoolWalk(moveName, distance, moveNumber, hasAGoatee) {
     if (moveNumber === void 0) { moveNumber = 1; }
@@ -113,6 +126,7 @@ var walkMoves = [
     ['mosey', 30, 7, false]
 ];
 walkMoves.forEach(function (move) { return performCoolWalk.apply(void 0, move); });
+console.log('\n');
 // OBJECT TYPES
 var Company;
 // Research this further...
@@ -129,6 +143,7 @@ company1.employees = [
 company1.employeeOfTheMonth = { name: 'Alice', age: 25 };
 company1.moneyEarned = 1000000;
 console.log(company1);
+console.log('\n');
 var CompanyTwo;
 var company2 = {};
 company2.companyName = 'Hamburger Inc.';
@@ -143,3 +158,4 @@ company2.employees = [
 company2.employeeOfTheMonth = { name: 'Fry Cook', age: 25 };
 company2.moneyEarned = 500000;
 console.log(company2);
+console.log('\n');
